@@ -1,0 +1,140 @@
+.header {
+    color: #c49d5e;
+    text-align: center;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin-top: 4rem;
+    font-size: 50px;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #EEEEEE;
+    color: black;
+    margin: -11px auto;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    border-radius: 10px;
+
+  }
+  .arrow img {
+    height: 20px;
+    margin: 10px 50%;
+    position: fixed;
+}
+.arrow button {
+    height: 20px;
+    margin: 10px 50%;
+    border:transparent;
+    background-color: transparent;
+    
+}
+
+
+.collapsible {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    height: 2rem;
+    border: none;
+    text-align: center;
+    outline: none;
+    position: relative;
+    margin: 0px auto;
+    z-index: 1;
+
+    
+  }
+  .collapsible button {
+    background:transparent;
+    border:transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  .active, .collapsible:hover {
+    background-color: #EEEEEE;
+  }
+  
+  .collapsible:after {
+    color: white;
+    font-weight: bold;
+    float: right;
+    
+  }
+
+  
+
+  /*
+body {
+    background-color: white;
+}
+.header {
+    color: #c49d5e;
+    text-align: center;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin-top: 4rem;
+    font-size: 50px;
+
+}
+.panel {
+    width:800px;
+    height:100px; 
+    background:white;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow:1px 1px 15px 2px rgba(200,200,200,50);
+    overflow: hidden;
+    transition: max-height 300ms;
+    max-height: 5;
+}
+
+#panel.open {
+    max-height: 100px;
+}
+
+.question {
+    padding: 10px;
+    margin: 0px 20px;
+    text-align: left;
+}
+
+.answer {
+    margin: 50px;
+} 
+.btn img {
+    margin:-290px 0px;
+    width:50px;
+    transition: transform 0.2s ease;
+    position: absolute;
+}
+
+.btn img:hover {
+    transform: translateY(5px);
+
+}
+.btn button {
+    margin: 1.5rem 30rem;
+    width:500px;
+    height:1px;
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+    transition: color 500ms linear;
+}
+.btn button:focus {
+    rotate: 180deg;
+    transform: translate(-50px, 530px);
+
+}
+
